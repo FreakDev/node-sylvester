@@ -2,13 +2,7 @@ import * as fs from 'fs';
 import { Sylvester } from './sylvester';
 import { Vector } from './vector';
 
-const lapack = (() => {
-  try {
-    return require('lapack');
-  } catch (err) {
-    return null;
-  }
-})();
+const lapack = null;
 
 function sign(x) {
   return x < 0 ? -1 : 1;
